@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Musau | Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-gray-100 transition-colors duration-300">
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="fixed top-4 right-4 p-2 rounded-full bg-gray-700" aria-label="Toggle dark mode">
+        <i class="bi bi-moon-stars-fill"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-purple-500">Andrew Musau</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-purple-500">Home</a>
+                <a href="projects.html" class="hover:text-purple-500">Projects</a>
+                <a href="skills.html" class="hover:text-purple-500">Skills</a>
+                <a href="about.html" class="hover:text-purple-500">About</a>
+                <a href="contact.html" class="hover:text-purple-500">Contact</a>
+            </div>
+            <button class="md:hidden bi bi-list text-2xl" id="menu-toggle" aria-label="Toggle menu"></button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="projects.html" class="block px-4 py-2 hover:bg-gray-700">Projects</a>
+            <a href="skills.html" class="block px-4 py-2 hover:bg-gray-700">Skills</a>
+            <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+            <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Project Gallery -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-up">My Projects</h2>
+            <!-- 3D Canvas -->
+            <canvas id="project-canvas" class="w-full h-96 mb-8"></canvas>
+            <!-- 2D Fallback -->
+            <div id="project-fallback" class="grid grid-cols-1 md:grid-cols-3 gap-6" data-aos="fade-up">
+                <div class="project-card bg-gray-800 p-4 rounded-lg">
+                    <img src="images/my-website.jpg" alt="MY-WEBSITE" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-4">MY-WEBSITE</h3>
+                    <p class="my-2">A personal website showcasing early web dev skills.</p>
+                    <a href="https://andrewchui01.github.io/MY-WEBSITE/" target="_blank" class="btn bg-purple-500 text-white px-4 py-2 rounded-full">Visit Project</a>
+                </div>
+                <div class="project-card bg-gray-800 p-4 rounded-lg">
+                    <img src="images/techtrend.jpg" alt="TechTrend" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-4">TechTrend</h3>
+                    <p class="my-2">A cosmic ecommerce platform with 432Hz Vibe Mode.</p>
+                    <a href="https://ecommerce-website-navy-omega.vercel.app/" target="_blank" class="btn bg-purple-500 text-white px-4 py-2 rounded-full">Visit Project</a>
+                </div>
+                <div class="project-card bg-gray-800 p-4 rounded-lg">
+                    <img src="images/spiritual-app.jpg" alt="Spiritual App UI" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-4">Spiritual App UI</h3>
+                    <p class="my-2">A mockup for a meditation app with 432Hz audio.</p>
+                    <a href="#" class="btn bg-purple-500 text-white px-4 py-2 rounded-full">View Mockup</a>
+                </div>
+            </div>
+            <div id="project-details" class="mt-8 text-center" data-aos="fade-up"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 relative">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Andrew Musau. All Rights Reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="https://x.com/AndrewMusau7" class="hover:text-purple-500"><i class="bi bi-twitter-x"></i></a>
+                <a href="https://github.com/andrewCHUI01" class="hover:text-purple-500"><i class="bi bi-github"></i></a>
+                <a href="https://wa.me/+254702712926" class="hover:text-purple-500"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/andrew-musau-a6aa192a7" class="hover:text-purple-500"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/_r.a.i.n_.drop" class="hover:text-purple-500"><i class="bi bi-instagram"></i></a>
+                <a href="https://drive.google.com/file/d/1CO4BNaw19qGUi44IiWc63kSRwNFM_sLA/view?usp=sharing" class="hover:text-purple-500"><i class="bi bi-file-earmark-text"></i> CV</a>
+            </div>
+        </div>
+        <!-- Soul Mode Toggle -->
+        <button id="soul-mode" class="fixed bottom-4 right-4 p-3 rounded-full bg-purple-500 z-50" aria-label="Toggle Soul Mode">
+            <i class="bi bi-star-fill text-lg"></i>
+        </button>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Custom styles to complement Tailwind */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.soul-mode {
+    background: url('images/cosmic-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    transition: background 1s ease;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+#theme-toggle i, #soul-mode i {
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover i, #soul-mode:hover i {
+    transform: rotate(180deg);
+}
+
+#mobile-menu {
+    transition: all 0.3s ease;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+.skill-node {
+    transition: all 0.3s ease;
+}
+
+.skill-node:hover {
+    transform: scale(1.2);
+}
+
+blockquote {
+    font-size: 1.2rem;
+    color: #8B5CF6;
+}
+
+.quote-glow {
+    transition: text-shadow 0.3s ease;
+}
+
+.quote-glow:hover {
+    text-shadow: 0 0 10px #8B5CF6, 0 0 20px #8B5CF6;
+}
+
+/* Fallback for 3D canvas */
+#project-fallback img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typing Animation */
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #8B5CF6; }
+}
+
+/* Cosmic Cursor Trail */
+#cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
