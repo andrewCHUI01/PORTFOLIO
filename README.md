@@ -17,24 +17,6 @@ A cosmic, futuristic portfolio showcasing Andrew Musau’s skills as a spiritual
 - **JavaScript**: Vanilla JS, Three.js (`script.js`).
 - **Libraries**: Bootstrap Icons, AOS, Three.js.
 
-## Project Structure
 
-portfolio/
-├── index.html              # Landing page
-├── projects.html          # 3D project gallery
-├── skills.html            # Cosmic skill tree
-├── about.html             # About page with image.jpeg
-├── contact.html           # Contact page
-├── styles.css             # Custom CSS
-├── script.js              # JS logic
-├── images/
-│   ├── image.jpeg          # my photo
-│   ├── my-website.jpg
-│   ├── techtrend.jpg
-│   ├── spiritual-app.jpg
-│   └── cosmic-bg.jpg
-├── sounds/
-│   └── soul-mode.mp3      # 432Hz track
-└── README.md              # This file
 
-live demo link 
+live demo link https://portfolio-andrew-musau-mutuas-projects.vercel.app/
